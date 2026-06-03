@@ -1,7 +1,11 @@
+import logo from "./assets/logo.svg";
+
 function App() {
   return (
     <>
-      <h1>Poupapp</h1>
+      <aside>
+        <img src={logo} alt="Logo" />
+      </aside>
     </>
   );
 }
