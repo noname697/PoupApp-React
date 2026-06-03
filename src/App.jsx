@@ -1,11 +1,15 @@
 import { Aside } from "./components/Aside";
 import { Container } from "./components/Container";
+import { Main } from "./components/Main";
+import { SearchInput } from "./components/SearchInput";
 
 function App() {
   return (
     <Container>
       <Aside />
-      <h1>Poupapp</h1>
+      <Main>
+        <SearchInput placeholder="Procure seu dinheiro..." />
+      </Main>
     </Container>
   );
 }
