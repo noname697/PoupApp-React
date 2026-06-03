@@ -6,6 +6,7 @@ function App() {
       <aside>
         <img src={logo} alt="Logo" />
       </aside>
+      <h1>Poupapp</h1>
     </>
   );
 }

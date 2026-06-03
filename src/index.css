@@ -11,7 +11,13 @@
   --secondary-expense: #F87828;
 }
 
-body{
-  margin: 0;
+* {
+  font-family        : "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  box-sizing         : border-box;
+}
+
+body {
+  margin          : 0;
   background-color: var(--neutral-background);
 }
