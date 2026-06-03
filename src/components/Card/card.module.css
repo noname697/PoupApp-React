@@ -1,0 +1,19 @@
+.card {
+    background-color: var(--neutral-surface);
+    border-radius   : 24px;
+}
+
+.header {
+    background-color: var(--neutral-header);
+    border-radius   : 24px 24px 0 0;
+    line-height     : 120%;
+    font-size       : 20px;
+    font-weight     : 700;
+    text-align      : center;
+    color           : var(--neutral-text);
+    padding         : 16px 0;
+}
+
+.body {
+    padding: 60px 0;
+}
