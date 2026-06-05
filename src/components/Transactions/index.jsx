@@ -28,7 +28,7 @@ export const Transactions = () => {
 
   return (
     <>
-      <ul>
+      <ul className={style.list}>
         {transactions.map((transaction, index) => {
           return (
             <li key={index}>
