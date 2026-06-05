@@ -7,6 +7,7 @@ import { DailyBudget } from "./components/DailyBudget";
 import { SavingsStatus } from "./components/SavingsStatus";
 import Card from "./components/Card";
 import style from "./app.module.css";
+import { Transactions } from "./components/Transactions";
 
 function App() {
   return (
@@ -35,8 +36,10 @@ function App() {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Header>Orçamento diário disponível:</Card.Header>
-              <Card.Body>R$ 200</Card.Body>
+              <Card.Header>Movimentação financeira</Card.Header>
+              <Card.Body>
+                <Transactions />
+              </Card.Body>
             </Card>
             <Card>
               <Card.Header>Orçamento diário disponível:</Card.Header>
