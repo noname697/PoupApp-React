@@ -2,6 +2,7 @@ import { Aside } from "./components/Aside";
 import { Container } from "./components/Container";
 import { Main } from "./components/Main";
 import { SearchInput } from "./components/SearchInput";
+import { Typography } from "./components/Typography";
 
 const App = () => {
   return (
@@ -10,6 +11,10 @@ const App = () => {
         <Aside />
         <Main>
           <SearchInput name="q" placeholder="Procure seu dinheiro..." />
+          <div>
+            <Typography variant="h1">Olá, Arthur!</Typography>
+            <Typography>Veja como estão suas finanças hoje</Typography>
+          </div>
         </Main>
       </Container>
     </div>
