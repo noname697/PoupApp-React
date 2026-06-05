@@ -1,11 +1,9 @@
-import logo from "./assets/logo.svg";
+import { Aside } from "./components/Aside";
 
 const App = () => {
   return (
     <div className="bg-neutral-background min-h-screen">
-      <aside>
-        <img src={logo} alt="Logo" />
-      </aside>
+      <Aside />
     </div>
   );
 };
