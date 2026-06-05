@@ -12,7 +12,7 @@ export const Accounts = () => {
     { bank: "Switch Bank", balance: 1800 },
   ];
   return (
-    <>
+    <div className={style.container}>
       <div>
         <ul className={style.list}>
           {accounts.map((account, index) => {
@@ -29,6 +29,6 @@ export const Accounts = () => {
           <IconWallet /> Adicionar conta
         </Button>
       </div>
-    </>
+    </div>
   );
 };

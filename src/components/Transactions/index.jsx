@@ -27,7 +27,7 @@ export const Transactions = () => {
   ];
 
   return (
-    <>
+    <div className={style.container}>
       <ul className={style.list}>
         {transactions.map((transaction, index) => {
           return (
@@ -42,6 +42,6 @@ export const Transactions = () => {
           <IconCurrency /> Adicionar Transação
         </Button>
       </div>
-    </>
+    </div>
   );
 };
