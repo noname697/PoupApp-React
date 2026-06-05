@@ -5,6 +5,7 @@ import { DailyBudget } from "./components/DailyBudget";
 import { Main } from "./components/Main";
 import { SavingsStatus } from "./components/SavingsStatus";
 import { SearchInput } from "./components/SearchInput";
+import { Transactions } from "./components/Transactions";
 import { Typography } from "./components/Typography";
 
 const App = () => {
@@ -33,7 +34,9 @@ const App = () => {
             </Card>
             <Card>
               <Card.Header>Movimentação financeira</Card.Header>
-              <Card.Body>R$200</Card.Body>
+              <Card.Body>
+                <Transactions />
+              </Card.Body>
             </Card>
             <Card>
               <Card.Header>Minhas contas</Card.Header>
