@@ -18,7 +18,7 @@ const App = () => {
             <Typography variant="h1">Olá, Arthur!</Typography>
             <Typography>Veja como estão suas finanças hoje.</Typography>
           </div>
-          <section>
+          <section className="grid grid-cols-2 items-stretch gap-6">
             <Card>
               <Card.Header>Orçamento diário disponível</Card.Header>
               <Card.Body>
@@ -28,7 +28,7 @@ const App = () => {
             <Card>
               <Card.Header>Progresso da meta financeira</Card.Header>
               <Card.Body>
-                <SavingsStatus percent={42} />
+                <SavingsStatus percent={75} />
               </Card.Body>
             </Card>
             <Card>
@@ -37,7 +37,14 @@ const App = () => {
             </Card>
             <Card>
               <Card.Header>Minhas contas</Card.Header>
-              <Card.Body>R$200</Card.Body>
+              <Card.Body>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+              </Card.Body>
             </Card>
           </section>
         </Main>
