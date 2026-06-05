@@ -5,9 +5,10 @@ import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
 import { DailyBudget } from "./components/DailyBudget";
 import { SavingsStatus } from "./components/SavingsStatus";
+import { Transactions } from "./components/Transactions";
+import { Accounts } from "./components/Accounts";
 import Card from "./components/Card";
 import style from "./app.module.css";
-import { Transactions } from "./components/Transactions";
 
 function App() {
   return (
@@ -44,11 +45,7 @@ function App() {
             <Card>
               <Card.Header>Minhas Contas</Card.Header>
               <Card.Body>
-                <p>R$200</p>
-                <p>R$200</p>
-                <p>R$200</p>
-                <p>R$200</p>
-                <p>R$200</p>
+                <Accounts />
               </Card.Body>
             </Card>
           </section>
