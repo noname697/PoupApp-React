@@ -3,44 +3,53 @@ import { Container } from "./components/Container";
 import { Main } from "./components/Main";
 import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
-import Card from "./components/Card";
 import { DailyBudget } from "./components/DailyBudget";
 import { SavingsStatus } from "./components/SavingsStatus";
+import Card from "./components/Card";
+import style from "./app.module.css";
 
 function App() {
   return (
     <Container>
       <Aside />
       <Main>
-        <SearchInput placeholder="Procure seu dinheiro..." />
-        <div>
-          <Typography variant="h1">Olá Arthur!</Typography>
-          <Typography variant="body">
-            Veja como estão suas finanças hoje
-          </Typography>
+        <div className={style.container}>
+          <SearchInput placeholder="Procure seu dinheiro..." />
+          <div>
+            <Typography variant="h1">Olá Arthur!</Typography>
+            <Typography variant="body">
+              Veja como estão suas finanças hoje
+            </Typography>
+          </div>
+          <section className={style.grid}>
+            <Card>
+              <Card.Header>Orçamento diário disponível:</Card.Header>
+              <Card.Body>
+                <DailyBudget value={250} />
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Header>Progresso da meta financeira</Card.Header>
+              <Card.Body>
+                <SavingsStatus percent={50} />
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Header>Orçamento diário disponível:</Card.Header>
+              <Card.Body>R$ 200</Card.Body>
+            </Card>
+            <Card>
+              <Card.Header>Orçamento diário disponível:</Card.Header>
+              <Card.Body>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+              </Card.Body>
+            </Card>
+          </section>
         </div>
-        <section>
-          <Card>
-            <Card.Header>Orçamento diário disponível:</Card.Header>
-            <Card.Body>
-              <DailyBudget value={250}/>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Header>Progresso da meta financeira</Card.Header>
-            <Card.Body>
-              <SavingsStatus percent={50}/>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Header>Orçamento diário disponível:</Card.Header>
-            <Card.Body>R$ 200</Card.Body>
-          </Card>
-          <Card>
-            <Card.Header>Orçamento diário disponível:</Card.Header>
-            <Card.Body>R$ 200</Card.Body>
-          </Card>
-        </section>
       </Main>
     </Container>
   );
