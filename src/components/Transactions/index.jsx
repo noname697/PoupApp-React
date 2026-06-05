@@ -1,3 +1,5 @@
+import { Button } from "../Button";
+import { IconCurrency } from "../icons";
 import { TransactionItem } from "../TransactionItem";
 
 export const Transactions = () => {
@@ -23,17 +25,25 @@ export const Transactions = () => {
     },
   ];
   return (
-    <div>
-      <ul>
-        {transactions.map((transaction, index) => (
-          <li
-            className="pb-4 mb-4 border-b border-b-neutral-header last:border-0"
-            key={index}
-          >
-            <TransactionItem item={transaction} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div>
+        <ul>
+          {transactions.map((transaction, index) => (
+            <li
+              className="pb-4 mb-4 border-b border-b-neutral-header last:border-0"
+              key={index}
+            >
+              <TransactionItem item={transaction} />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="flex justify-center">
+        <Button>
+          <IconCurrency />
+          <p>Adicionar transação</p>
+        </Button>
+      </div>
+    </>
   );
 };
