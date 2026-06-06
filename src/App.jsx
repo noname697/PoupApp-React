@@ -1,3 +1,4 @@
+import { Accounts } from "./components/Accounts";
 import { Aside } from "./components/Aside";
 import Card from "./components/Card";
 import { Container } from "./components/Container";
@@ -41,12 +42,7 @@ const App = () => {
             <Card>
               <Card.Header>Minhas contas</Card.Header>
               <Card.Body>
-                <p>R$200</p>
-                <p>R$200</p>
-                <p>R$200</p>
-                <p>R$200</p>
-                <p>R$200</p>
-                <p>R$200</p>
+                <Accounts />
               </Card.Body>
             </Card>
           </section>
