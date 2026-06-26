@@ -1,8 +1,10 @@
 # PoupApp
 
-PoupApp is a personal finance dashboard built with **React + Vite** and styled with **CSS Modules**.
+PoupApp is a personal finance dashboard built with **React + Vite** and designed as a study project for UI styling techniques.
 
-The main goal of this project was to practice and learn CSS Modules by creating a clean, organized and component-based financial control interface. The project is mostly a front-end/static application, focused on UI structure, component styling and visual organization rather than full financial data persistence or backend integration.
+The purpose of this repository is not to deliver a fully functional finance app. Its real goal is to practice layout composition, visual organization and styling strategies, comparing two approaches across separate branches: one using **CSS Modules** and another using **Tailwind CSS**.
+
+This project is intentionally focused on the interface layer, so the emphasis is on component structure, scoped styles and visual experimentation rather than on backend integration, data persistence or business logic.
 
 ![PoupApp Screenshot](./public/screenshot.png)
 
@@ -43,16 +45,22 @@ npm run lint
 - Quick transaction search
 - Reusable React components
 - Modular component structure, including `Accounts`, `Transactions`, `DailyBudget`, `SavingsStatus`, `ProgressBar`, and others
-- Component-scoped styling using CSS Modules
+- Styling experiments with separate implementations for CSS Modules and Tailwind CSS
+
+## Branches
+
+- `main` or CSS Modules branch: implementation focused on component-scoped styles
+- Tailwind CSS branch: implementation focused on utility-first styling and layout experiments
 
 ## Project Purpose
 
-This project was developed as a learning exercise during my studies with CSS Modules.
+This project was developed as a learning exercise during my studies in front-end styling.
 
-Although PoupApp looks like a personal finance application, its main purpose is not to be a complete production-ready finance tool. Instead, it was created to practice:
+Although PoupApp looks like a personal finance application, it is not meant to be a complete production-ready finance tool. Instead, it was created to practice:
 
 - Building interfaces with React
 - Using CSS Modules for scoped component styling
+- Using Tailwind CSS for utility-first styling
 - Creating reusable components
 - Organizing styles by component
 - Structuring a front-end project with Vite
@@ -84,7 +92,7 @@ There is no backend or database integration at the moment. The current focus is 
 
 PoupApp is a Single Page Application built with React and bundled with Vite for a fast development experience.
 
-The `src` folder contains components organized by responsibility, such as accounts, transactions, daily budget and savings progress. CSS Modules are used to keep styles scoped to each component, helping avoid global class conflicts and making the project easier to maintain.
+The `src` folder contains components organized by responsibility, such as accounts, transactions, daily budget and savings progress. Depending on the branch, the project uses either CSS Modules or Tailwind CSS to compare styling approaches and reinforce learning.
 
 ## Repository Structure
 
